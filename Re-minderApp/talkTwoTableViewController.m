@@ -1,22 +1,23 @@
 //
-//  talkOneTableViewController.m
+//  talkTwoTableViewController.m
 //  Re-minderApp
 //
-//  Created by Bryan Lee on 5/10/13.
+//  Created by Bryan Lee on 6/10/13.
 //  Copyright (c) 2013 bosslee. All rights reserved.
 //
 
-#import "talkOneTableViewController.h"
+#import "talkTwoTableViewController.h"
 
-@interface talkOneTableViewController ()
+@interface talkTwoTableViewController ()
 
 @property (nonatomic, retain) NSIndexPath* checkedIndexPath;
 
+
 @end
 
-@implementation talkOneTableViewController {
-    NSArray *feelingWords;
-    NSArray *thumbnails;
+@implementation talkTwoTableViewController {
+    NSArray *feelingWords2;
+
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -32,7 +33,7 @@
 {
     [super viewDidLoad];
     //setting up words
-    feelingWords = [NSArray arrayWithObjects:@"Very Happy",@"Happy",@"Pleased",@"Moderate",@"Doing OK",@"Sad",@"Very Sad",nil];
+    feelingWords2 = [NSArray arrayWithObjects:@"Working",@"Playing",@"Family Time",@"Star Gazing",@"Youtubing",@"Parting",nil];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -58,21 +59,15 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [feelingWords count];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 66;
+    return [feelingWords2 count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Cell2";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
     if([self.checkedIndexPath isEqual:indexPath])
     {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -82,16 +77,20 @@
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
 
+    
     UILabel *feelingText = (UILabel *)[cell viewWithTag:101];
-    feelingText.text = [feelingWords objectAtIndex:indexPath.row];
-
+    feelingText.text = [feelingWords2 objectAtIndex:indexPath.row];
     
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 66;
+}
+
 - (void)tableView:(UITableView*)tableView didSelectRowAtIndexPath:(NSIndexPath*)indexPath
 {
-
     // add checkmark
     if(self.checkedIndexPath)
     {
@@ -111,20 +110,9 @@
     
     //save value to NSUserDefault
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [defaults setObject:[NSString stringWithFormat:@"%d",rowNum] forKey:@"feeling"];
+    [defaults setObject:[NSString stringWithFormat:@"%d",rowNum] forKey:@"activity_id"];
     NSLog(@"rowNum SAVED is %@",[NSString stringWithFormat:@"%d",rowNum]);
-    
-
 }
-
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryNone;
-    [cell setSelected:FALSE animated:TRUE];
-}
-
-
 
 /*
 // Override to support conditional editing of the table view.

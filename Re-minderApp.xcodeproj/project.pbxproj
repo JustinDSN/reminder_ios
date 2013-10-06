@@ -32,6 +32,8 @@
 		E69C5EDA1800F19100546B7D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E69C5ED11800F19100546B7D /* AFURLSessionManager.m */; };
 		E69C5EDD1800F3BA00546B7D /* firstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69C5EDC1800F3BA00546B7D /* firstViewController.m */; };
 		E69C5EF01800FD2300546B7D /* talkOneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69C5EEF1800FD2300546B7D /* talkOneTableViewController.m */; };
+		E69C5EF3180154A700546B7D /* talkTwoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69C5EF2180154A700546B7D /* talkTwoTableViewController.m */; };
+		E69C5EF618015CA100546B7D /* talkThreeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E69C5EF518015CA100546B7D /* talkThreeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,10 @@
 		E69C5EDC1800F3BA00546B7D /* firstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = firstViewController.m; path = ../firstViewController.m; sourceTree = "<group>"; };
 		E69C5EEE1800FD2300546B7D /* talkOneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = talkOneTableViewController.h; sourceTree = "<group>"; };
 		E69C5EEF1800FD2300546B7D /* talkOneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = talkOneTableViewController.m; sourceTree = "<group>"; };
+		E69C5EF1180154A700546B7D /* talkTwoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = talkTwoTableViewController.h; sourceTree = "<group>"; };
+		E69C5EF2180154A700546B7D /* talkTwoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = talkTwoTableViewController.m; sourceTree = "<group>"; };
+		E69C5EF418015CA100546B7D /* talkThreeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = talkThreeTableViewController.h; sourceTree = "<group>"; };
+		E69C5EF518015CA100546B7D /* talkThreeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = talkThreeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +228,10 @@
 			children = (
 				E69C5EEE1800FD2300546B7D /* talkOneTableViewController.h */,
 				E69C5EEF1800FD2300546B7D /* talkOneTableViewController.m */,
+				E69C5EF1180154A700546B7D /* talkTwoTableViewController.h */,
+				E69C5EF2180154A700546B7D /* talkTwoTableViewController.m */,
+				E69C5EF418015CA100546B7D /* talkThreeTableViewController.h */,
+				E69C5EF518015CA100546B7D /* talkThreeTableViewController.m */,
 			);
 			name = "Talk Views";
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 				E69C5EA01800F11500546B7D /* Re_minderAppViewController.m in Sources */,
 				E69C5ED31800F19100546B7D /* AFHTTPRequestOperationManager.m in Sources */,
 				E69C5EDD1800F3BA00546B7D /* firstViewController.m in Sources */,
+				E69C5EF618015CA100546B7D /* talkThreeTableViewController.m in Sources */,
 				E69C5ED51800F19100546B7D /* AFNetworkReachabilityManager.m in Sources */,
 				E69C5ED91800F19100546B7D /* AFURLResponseSerialization.m in Sources */,
 				E69C5EF01800FD2300546B7D /* talkOneTableViewController.m in Sources */,
@@ -336,6 +347,7 @@
 				E69C5ED41800F19100546B7D /* AFHTTPSessionManager.m in Sources */,
 				E69C5ED81800F19100546B7D /* AFURLRequestSerialization.m in Sources */,
 				E69C5EDA1800F19100546B7D /* AFURLSessionManager.m in Sources */,
+				E69C5EF3180154A700546B7D /* talkTwoTableViewController.m in Sources */,
 				E69C5E9A1800F11500546B7D /* Re_minderAppAppDelegate.m in Sources */,
 				E69C5E961800F11500546B7D /* main.m in Sources */,
 			);
